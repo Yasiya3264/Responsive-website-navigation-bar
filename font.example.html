@@ -1,0 +1,48 @@
+# Methode 1 - add import line to you external css file and link to your html file[<link rel="stylesheet" href="font.css">] .
+<style>
+  /* link font styles to your web page */
+  @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap'); 
+
+  /* Add font family to your div or tags like shown */
+  *{
+    font-family: 'Play', sans-serif;
+  }
+</style>
+
+# method 2 - add import line to your website head section. in-side [<style>@import url('/* Your url */'); </style>]
+# Also u can use in html file.
+
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap'); 
+    </style>
+    <title>font example css and html</title>
+  </head>
+  
+  <body>
+    <h1>Example test text</h1>
+  </body>
+</html>
+
+# Last method - link fonts to your webpage like shown.
+
+<html>
+  <head>
+    <title>Link fonts</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    
+    /* add style to your div or tags */
+    *{
+      font-family: 'Play', sans-serif;
+    }
+    
+  </head>
+  <body>
+    <h1>Example test text</h1>
+  </body>
+</html>
+
