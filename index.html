@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Example Nav menu</title>
+    <link rel="shortcut icon" href="https://teamx.infuze.lk/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://teamx.infuze.lk/files/font.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(35, 35, 35);
+        }
+
+        * {
+            font-size: 20px;
+            color: white;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- desktop menu -->
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Store</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Register</a></li>
+        </ul>
+    </nav>
+    <!-- end -->
+
+    <!-- mobile phone menu -->
+    <p class="mobile-nav-buttons-icon" onclick="togglemenu()">&tdot;</p><!--this is site menu icon-->
+
+    <div class="mobile-nav" id="menuList">
+        <ul class="div-none">
+            <p class="mobile-nav-buttons"><a href="">Home</a></p>
+            <p class="mobile-nav-buttons"><a href="">About</a></p>
+            <p class="mobile-nav-buttons"><a href="">Projects</a></p>
+            <p class="mobile-nav-buttons"><a href="">Contact</a></p>
+        </ul>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "300px";
+            }
+
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+    <!-- end -->
+
+</body>
+
+</html>
